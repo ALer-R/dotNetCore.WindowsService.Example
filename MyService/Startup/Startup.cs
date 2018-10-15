@@ -27,17 +27,6 @@ namespace MyService
         public IConfiguration Configuration { get; }
         public void ConfigureServices(IServiceCollection services)
         {
-            #region NLog
-            //services.AddSingleton<ILoggerFactory, LoggerFactory>();
-            //services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
-            ////services.AddLogging((builder) => builder.SetMinimumLevel(LogLevel.Trace));
-            ////services.AddLogging((builder) => builder.SetMinimumLevel(Configuration.GetSection("Logging").GetValue<LogLevel>("LogLevel")));
-            //var serviceProvider = services.BuildServiceProvider();
-            //var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
-
-            ////configure NLog
-            //loggerFactory.AddNLog(new NLogProviderOptions { CaptureMessageTemplates = true, CaptureMessageProperties = true });
-            #endregion
         }        
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
