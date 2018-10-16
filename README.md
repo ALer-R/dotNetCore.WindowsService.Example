@@ -2,6 +2,14 @@
 
 dotNetCore2.1在Windows服务项目示例
 
+###MyService.csproj
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+
 发布后请以管理员权限运行Install.bat进行安装
 也可以手动使用命令安装
 
